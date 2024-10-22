@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+.list-item-style {
+  @apply hover:bg-[#FAFAFA] hover:text-[#2196F3] h-[72px] flex items-center relative after:transition-all after:duration-300
+  after:absolute after:w-full after:h-1  after:bg-[#2196F3] 
+  after:top-0 after:left-[-100%]  px-5 hover:after:left-0 overflow-hidden
+  transition-all duration-300 max-sm:text-sm max-sm:h-[45px];
+}
+.sm-screen-style {
+  @apply max-sm:flex-col max-sm:items-center max-sm:text-sm;
+}
+.landing-before {
+  @apply before:absolute before:top-[-70px] before:left-0 before:w-full before:h-full before:bg-[rgb(236,236,236)] before:z-[-1]
+  before:skew-y-[-6deg];
+}
+.mega-menu {
+  @apply absolute -translate-x-1/2 left-1/2 top-[100px] z-50 w-[75%] 
+   bg-white border-b-2 border-[#2196F3] flex gap-10 text-[#2196F3]
+   items-center justify-around
+   transition-all;
+}
+.mega-menu ul li a {
+  @apply p-2 block border-b-[1px] border-gray-400;
+}
+.mega-menu ul li a i {
+  @apply mr-2;
+}
+/* ////////////////////// Articles Section //////////////////////// */
+.heading-style {
+  @apply relative before:absolute before:w-[12px] before:h-[12px] 
+  before:rounded-full before:top-1/2 before:-translate-y-1/2 before:-left-6
+  after:absolute after:w-[12px] after:h-[12px] 
+  after:rounded-full after:top-1/2 after:-translate-y-1/2 after:-right-6
+   before:bg-[#2196F3] after:bg-[#2196F3]
+   before:hover:animate-moveLeft
+   after:hover:animate-moveRight
+   hover:border-white hover:text-white
+   hover:before:-z-[1] hover:after:-z-[1]
+   z-20
+   hover:delay-500
+   transition-all
+   text-3xl font-bold uppercase border-2 max-w-fit py-[10px] px-5 border-black mx-auto mb-24;
+}
+.articles .heading .box {
+  @apply w-[255px] h-[369px] shadow-2xl rounded-lg overflow-hidden transition-all duration-500 
+  hover:-translate-y-3;
+}
+.articles .heading .box img {
+  @apply min-w-full;
+}
+.articles .heading .box .content {
+  @apply text-left p-3 border-b;
+}
+.articles .heading .box .content h3 {
+  @apply font-bold text-lg;
+}
+.articles .heading .box .content p {
+  @apply text-slate-400 leading-6;
+}
+.articles .heading .box .info {
+  @apply text-left flex justify-between p-3 items-center text-[#2196F3];
+}
+.articles .heading .box .info a {
+  @apply font-bold;
+}
+/* ////////////////// Gallery Section /////////////////// */
+/* ////////////////// Gallery Section /////////////////// */
+/* ////////////////// Gallery Section /////////////////// */
+.gallery .box {
+  @apply w-[355px] h-[355px] p-4 bg-white shadow-xl relative after:absolute after:w-0 after:h-0
+  after:top-1/2 after:left-1/2 after:bg-white/20 hover:after:animate-flash after:opacity-0
+  after:-translate-x-1/2 after:-translate-y-1/2;
+}
+/* /////////////////////////Features/////////////////////////////// */
+/* /////////////////////////Features/////////////////////////////// */
+/* /////////////////////////Features/////////////////////////////// */
+.feature-border-heading {
+  @apply w-fit mx-auto relative after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:h-1 after:w-5/6
+  after:bg-red-500;
+}
+.feature-image-overlay {
+  @apply relative before:absolute before:w-full before:h-full before:bg-green-500/35 before:top-0 before:left-0 before:z-10;
+}
+/* //////////////////////////////Testimonials //////////////////////////////// */
+/* //////////////////////////////Testimonials //////////////////////////////// */
+/* //////////////////////////////Testimonials //////////////////////////////// */
+.test-box {
+  @apply bg-white rounded-md shadow-md relative p-4;
+}
+/* //////////////////////////////// Team members //////////////////////////////// */
+/* //////////////////////////////// Team members //////////////////////////////// */
+/* //////////////////////////////// Team members //////////////////////////////// */
+.member-box {
+  @apply relative after:absolute after:h-full after:w-5/6 after:top-0 after:right-0 after:bg-gray-100
+  after:-z-20 after:rounded-lg
+  before:absolute before:w-5/6 before:h-full before:top-0 before:-right-full before:bg-gray-200 
+  before:-z-10 before:hover:right-0 overflow-hidden before:rounded-lg
+  before:duration-500;
+}
+/* /////////////////////////////////// Services////////////////////////////////////  */
+/* /////////////////////////////////// Services////////////////////////////////////  */
+/* /////////////////////////////////// Services////////////////////////////////////  */
+.services-head-style {
+  @apply relative after:absolute after:top-0 after:-right-6 after:h-full after:w-2/5 after:bg-gray-300
+  after:-skew-x-12;
+}
+.services-box {
+  @apply hover:-translate-y-2 relative after:absolute after:top-0 after:left-1/2 after:-translate-x-1/2 
+  after:h-1 after:w-0 after:bg-blue-500 after:hover:w-full after:transition-all transition-all;
+}
+/* ////////////////////////////////////////// Skills /////////////////////////////////////// */
+/* ////////////////////////////////////////// Skills /////////////////////////////////////// */
+/* ////////////////////////////////////////// Skills /////////////////////////////////////// */
+.skills-bar {
+  @apply mt-5 h-8 bg-gray-300 relative after:absolute after:top-0 after:left-0 after:h-full
+   after:bg-blue-500;
+}
+/* ///////////////////////////////////////////// work steps ////////////////////////// */
+/* ///////////////////////////////////////////// work steps ////////////////////////// */
+/* ///////////////////////////////////////////// work steps ////////////////////////// */
+.work-box {
+  @apply bg-gray-100 p-7 border border-white rounded-md relative after:absolute after:top-1/2 after:left-1/2 
+  after:-translate-x-1/2 after:-translate-y-1/2 after:w-0 after:h-0 after:transition-all after:bg-gray-200 
+  after:hover:w-full after:hover:h-full z-10 after:-z-10;
+}
+/* /////////////////////////////////////////// Our Stats /////////////////////////////*/
+/* /////////////////////////////////////////// Our Stats /////////////////////////////*/
+/* /////////////////////////////////////////// Our Stats /////////////////////////////*/
+.box-stat {
+  @apply relative before:absolute after:absolute before:w-[2px] before:h-0 before:bg-blue-500 before:duration-500
+  before:top-0 before:left-0 before:hover:h-full
+  after:w-[2px] after:h-0 after:bg-blue-500 after:duration-500 after:bottom-0 after:right-0 after:hover:h-full;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
